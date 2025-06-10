@@ -1,0 +1,56 @@
+---
+import location from './src/assets/location-icon.svg'
+import phone from './src/assets/phone-icon.svg'
+import mail from './src/assets/mail-icon.svg'
+---
+
+<section id="contacto" class=" py-28 px-8 md:px-16 xl:px-50 2xl:px-90 flex flex-col gap-12 items-center">
+    <h2 class="text-5xl font-bold">Infórmate</h2>
+    <article class="flex justify-center gap-16">
+        <aside class="flex flex-col gap-6">
+            <h3 class="text-2xl font-semibold">Dirección</h3>
+            <div class="flex gap-4">
+                <div class="rounded-full bg-gray-400 p-1 w-fit h-fit">
+                    <img src={location.src} alt="Icono Emplazamiento">
+                </div>
+                <div>
+                    <p class="text-gray-700">Academia RAINBOW</p>
+                    <p class="text-gray-700">C/ Peña Nevada Nº 2, Metro Congosto.</p>
+                    <p class="text-gray-700">28031 MADRID</p>
+                    <a href="https://www.google.es/maps/place/CallePe%C3%B1a+Nevada,+2,+Vallecas,+28031+Madrid/@40.37052,-3.62086,2312m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd4224ff4423a821:0xa375fb7d4347b59a!8m2!3d40.37052!4d-3.62086!16s%2Fg%2F11pw1b1mbx?hl=es&entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-semibold">Ver en Google Maps</a>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="rounded-full bg-gray-400 p-1 w-fit h-fit">
+                    <img src={phone.src} alt="Icono Teléfono">
+                </div>
+                <div>
+                    <p class="text-gray-700">654 32 01 72</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="rounded-full bg-gray-400 p-1 w-fit h-fit">
+                    <img src={mail.src} alt="Icono Correo">
+                </div>
+                <div>
+                    <p class="text-gray-700">info@rainbowacademia.com</p>                    
+                </div>
+            </div>            
+        </aside>
+        <form action="" class="flex flex-col gap-4">
+            <label for="" class="flex flex-col gap-1">
+                Nombre
+                <input type="text" placeholder="Ana" class="border-2 border-gray-500 rounded-lg px-2 py-1">
+            </label>
+            <label for="" class="flex flex-col gap-1">
+                Email
+                <input type="email" placeholder="ana@gmail.com" class="border-2 border-gray-500 rounded-lg px-2 py-1">
+            </label>
+            <label for="" class="flex flex-col gap-1">
+                Mensaje
+                <textarea name="" id="" class="border-2 border-gray-500 rounded-lg px-2 py-1" placeholder="Escribe tu mensaje aquí ..." cols="50" rows="4"></textarea>                
+            </label>
+            <button class="bg-[#0a2069] hover:bg-[#3d4778] px-6 py-2 text-white font-semibold cursor-pointer rounded-xl">Enviar</button>
+        </form>
+    </article>
+</section>
