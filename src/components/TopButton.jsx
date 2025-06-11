@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 
 export default function ScrollToTop() {
+    console.log("button clicked")
     const handleClick = () => {
         window.scrollTo({
             top: 0,
@@ -20,9 +21,10 @@ export default function ScrollToTop() {
                 bottom: "20px",
                 right: "20px",
                 padding: "10px",
-                background: "orange",
+                background: "red",
                 color: "white",
                 fontWeight: "bold",
+                cursor: "pointer",
             }}
         >
             ↑ TOP
