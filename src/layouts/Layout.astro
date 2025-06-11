@@ -35,6 +35,29 @@ import favicon from '../../public/rainbow-favicon.png'
 		<button class="top hidden bg-orange-900 p-2 text-white font-bold bottom-32 right-8 absolute cursor-pointer rounded-xl">↑ TOP</button>
 		<slot />
 		<Footer />
+		<script>
+			// Mostrar el botón "TOP" al hacer scroll
+			const scrollTOP = document.querySelector(".top");
+
+			window.addEventListener("scroll", () => {
+			if (!scrollTOP) return;
+			if (window.scrollY > 50) {
+				scrollTOP.classList.add("block");
+				scrollTOP.classList.remove("hidden");
+			} else {
+				scrollTOP.classList.remove("block");
+				scrollTOP.classList.add("hidden");
+			}
+			});
+
+			// Cuando haces click en el botón "TOP", sube arriba
+			scrollTOP?.addEventListener("click", () => {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+			})
+		</script>
 	</body>
 </html>
 
@@ -48,27 +71,3 @@ import favicon from '../../public/rainbow-favicon.png'
 		overflow-x: hidden;
 	}
 </style>
-
-<script>
-	// Mostrar el botón "TOP" al hacer scroll
-const scrollTOP = document.querySelector(".top");
-
-window.addEventListener("scroll", () => {
-  if (!scrollTOP) return;
-  if (window.scrollY > 50) {
-    scrollTOP.classList.add("block");
-    scrollTOP.classList.remove("hidden");
-  } else {
-    scrollTOP.classList.remove("block");
-    scrollTOP.classList.add("hidden");
-  }
-});
-
-// Cuando haces click en el botón "TOP", sube arriba
-scrollTOP?.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-})
-</script>
