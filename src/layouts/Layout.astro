@@ -3,6 +3,7 @@ import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 import "../styles/global.css";
 import favicon from '../../public/rainbow-favicon.png'
+import ScrollToTop from "../components/TopButton";
 ---
 
 <!doctype html>
@@ -38,6 +39,7 @@ import favicon from '../../public/rainbow-favicon.png'
 		<button id="scrollToTop" class="hidden fixed top-[90%] right-8 p-4 bg-orange-700 text-white font-semibold rounded-lg shadow-md cursor-pointer">↑ TOP</button>
 		<slot />
 		<Footer />
+		<ScrollToTop client:visible/>
 	</body>
 </html>
 
