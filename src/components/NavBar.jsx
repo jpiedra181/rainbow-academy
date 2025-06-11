@@ -86,7 +86,10 @@ export default function NavBar() {
                         onClick={() => setIsMenuOpen(false)}
                         className="absolute top-6 right-8 text-4xl text-black cursor-pointer"
                     >
-                        <img src={closeBtn} alt="" />
+                        <img
+                            src={closeBtn.src}
+                            alt="Botón para cerrar el pop-up"
+                        />
                     </button>
                     <a href="#sobrenosotros" onClick={handleLinkClick}>
                         Conócenos
