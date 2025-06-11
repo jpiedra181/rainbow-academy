@@ -32,9 +32,11 @@ import favicon from '../../public/rainbow-favicon.png'
 	</head>
 	<body>
 		<Nav />
-		<button class="top hidden bg-orange-900 p-2 text-white font-bold bottom-32 left-8 fixed cursor-pointer rounded-xl">↑ TOP</button>
+		<button class="top bg-orange-900 p-2 text-white font-bold bottom-32 right-8 absolute cursor-pointer rounded-xl">↑ TOP</button>
 		<slot />
 		<Footer />
+		<!-- Scripts -->
+		 <script src="../scripts/main.js"></script>
 	</body>
 </html>
 
@@ -49,7 +51,7 @@ import favicon from '../../public/rainbow-favicon.png'
 	}
 </style>
 
-<script>
+<!-- <script>
 	const scrollTOP = document.querySelector('.top')
 	window.addEventListener('scroll', () => {    
     if (!scrollTOP) return;
@@ -67,4 +69,4 @@ import favicon from '../../public/rainbow-favicon.png'
 			behavior: 'smooth'
 		})
 	})
-</script>
+</script> -->
