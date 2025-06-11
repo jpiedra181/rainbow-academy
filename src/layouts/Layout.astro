@@ -18,6 +18,7 @@ import favicon from '../../public/rainbow-favicon.png'
 		<meta name="description" content="Academia de inglés en Madrid para niños y adultos. Clases dinámicas y preparación oficial para los exámenes Cambridge. Aprende con nosotros." />
 
 		<!-- Scripts -->
+		 <script src="/scripts/top.js" defer></script>
 		 <!-- <script src="/rainbow-academy/scripts/top.js" defer></script>
 		 <script src="scripts/nav.js" defer></script> -->
 
@@ -36,7 +37,7 @@ import favicon from '../../public/rainbow-favicon.png'
 	</head>
 	<body>
 		<Nav />
-		<button class="top bg-orange-900 p-2 text-white font-bold bottom-32 right-8 absolute cursor-pointer rounded-xl">↑ TOP</button>
+		<button class="top hidden bg-orange-900 p-2 text-white font-bold bottom-32 right-8 absolute cursor-pointer rounded-xl">↑ TOP</button>
 		<slot />
 		<Footer />
 	</body>
@@ -53,7 +54,7 @@ import favicon from '../../public/rainbow-favicon.png'
 	}
 </style>
 
-<script is:inline>
+<!-- <script is:inline>
 	const scrollTOP = document.querySelector('.top')
 	window.addEventListener('scroll', () => {    
     if (!scrollTOP) return;
@@ -71,4 +72,4 @@ import favicon from '../../public/rainbow-favicon.png'
 			behavior: 'smooth'
 		})
 	})
-</script>
+</script> -->
