@@ -1,5 +1,9 @@
+---
+import menu from '../assets/menu-icon.svg'
+---
+
 <div id="navbar" class="w-full h-20 bg-transparent z-10 fixed top-0 transition-colors duration-300">
-    <nav class="w-full h-h-full flex justify-between items-center py-4 px-8 md:px-16 xl:px-50 2xl:px-90 text-white">
+    <nav class="w-full h-h-full flex justify-between items-center py-4 px-8 md:px-16 xl:px-60 2xl:px-96 text-white">
         <p class="text-4xl">RAINBOW</p>
         <ul class="hidden md:flex gap-4 text-xl">
             <li><a href="#sobrenosotros" class="transition-smooth">Conócenos</a></li>
@@ -9,7 +13,7 @@
             <li><a href="#contacto" class="transition-smooth">Contacto</a></li>
 
         </ul>
-        <img src="../assets/menu-icon.svg" alt="Icono para representar el menú en móviles" class="w-8 flex md:hidden">
+        <img src={menu.src} alt="Icono para representar el menú en móviles" class="w-8 flex md:hidden">
     </nav>
 </div>
 

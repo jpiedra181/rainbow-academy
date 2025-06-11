@@ -1,12 +1,48 @@
-<div class="w-full h-28 bg-[#0a2069] text-white">
-    <nav class="w-full h-full flex flex-col md:flex-row justify-between items-center py-4 px-8 md:px-16 xl:px-50 2xl:px-90">
+---
+import location from '../assets/location-icon.svg'
+import phone from '../assets/phone-icon.svg'
+import mail from '../assets/mail-icon.svg'
+---
+
+
+<section class="w-full h-fit bg-[#0a2069] text-white py-8">
+    <div class="w-full h-full flex flex-col justify-between items-centern gap-10 py-4 px-8 md:px-16 xl:px-50 2xl:px-90">
         <p class="text-4xl text-center">RAINBOW</p>
-        <ul class="flex flex-col md:flex-row items-center gap-4">            
+        <!-- <ul class="flex flex-col md:flex-row items-center gap-4">            
             <li><a href="#sobrenosotros" class="cursor-pointer hover:text-gray-500">Conócenos</a></li>
             <li><a href="#clases" class="cursor-pointer hover:text-gray-500">Clases</a></li>
             <li><a href="#metodo" class="cursor-pointer hover:text-gray-500">Metodología</a></li>
             <li><a href="#profesores" class="cursor-pointer hover:text-gray-500">Profesores</a></li>
             <li><a href="#contacto" class="cursor-pointer hover:text-gray-500">Contacto</a></li>
-        </ul>
-    </nav>
-</div>
+        </ul> -->
+        <aside class="w-full flex flex-col md:flex-row justify-between">
+            <div class="flex gap-4">
+                <div class="rounded-full bg-gray-400 p-1 w-fit h-fit">
+                    <img src={location.src} alt="Icono Emplazamiento">
+                </div>
+                <div>
+                    <p class="text-gray-300">Academia RAINBOW</p>
+                    <p class="text-gray-300">C/ Peña Nevada Nº 2, Metro Congosto.</p>
+                    <p class="text-gray-300">28031 MADRID</p>
+                    <a href="https://www.google.es/maps/place/CallePe%C3%B1a+Nevada,+2,+Vallecas,+28031+Madrid/@40.37052,-3.62086,2312m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd4224ff4423a821:0xa375fb7d4347b59a!8m2!3d40.37052!4d-3.62086!16s%2Fg%2F11pw1b1mbx?hl=es&entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-semibold">Ver en Google Maps</a>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="rounded-full bg-gray-400 p-1 w-fit h-fit">
+                    <img src={phone.src} alt="Icono Teléfono">
+                </div>
+                <div>
+                    <p class="text-gray-300">654 32 01 72</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="rounded-full bg-gray-400 p-1 w-fit h-fit">
+                    <img src={mail.src} alt="Icono Correo">
+                </div>
+                <div>
+                    <p class="text-gray-300">info@rainbowacademia.com</p>                    
+                </div>
+            </div>            
+        </aside>
+    </div>
+</section>
