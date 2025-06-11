@@ -1,17 +1,11 @@
-import { useEffect } from "react"
-
 export default function ScrollToTop() {
-    console.log("button clicked")
     const handleClick = () => {
+        console.log("button clicked")
         window.scrollTo({
             top: 0,
             behavior: "smooth",
         })
     }
-
-    useEffect(() => {
-        console.log("ScrollToTop component mounted")
-    }, [])
 
     return (
         <button

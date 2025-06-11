@@ -33,10 +33,10 @@ import ScrollToTop from "../components/TopButton";
 	</head>
 	<body>
 		<Nav />
-		<button id="scrollToTop" class="hidden fixed top-[90%] right-8 p-4 bg-orange-700 text-white font-semibold rounded-lg shadow-md cursor-pointer">↑ TOP</button>
+		<!-- <button id="scrollToTop" class="hidden fixed top-[90%] right-8 p-4 bg-orange-700 text-white font-semibold rounded-lg shadow-md cursor-pointer">↑ TOP</button> -->
 		<slot />
 		<Footer />
-		<ScrollToTop client:visible/>
+		<ScrollToTop client:load/>
 	</body>
 </html>
 
@@ -45,7 +45,6 @@ import ScrollToTop from "../components/TopButton";
 	body {
 		margin: 0;
 		width: 100%;
-		height: 100%;
 		scroll-behavior: smooth;
 		overflow-x: hidden;
 	}
