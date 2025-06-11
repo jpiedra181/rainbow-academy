@@ -17,6 +17,10 @@ import favicon from '../../public/rainbow-favicon.png'
 		<title>Academia de inglés para niños y adultos | Cambridge Preparation</title>
 		<meta name="description" content="Academia de inglés en Madrid para niños y adultos. Clases dinámicas y preparación oficial para los exámenes Cambridge. Aprende con nosotros." />
 
+		<!-- Scripts -->
+		 <!-- <script src="/rainbow-academy/scripts/top.js" defer></script>
+		 <script src="scripts/nav.js" defer></script> -->
+
 		<!-- Open Graph -->
 		<!-- <meta property="og:type" content="website" />
 		<meta property="og:title" content="Academia de inglés en Madrid - Aprende con nosotros" />
@@ -35,8 +39,6 @@ import favicon from '../../public/rainbow-favicon.png'
 		<button class="top bg-orange-900 p-2 text-white font-bold bottom-32 right-8 absolute cursor-pointer rounded-xl">↑ TOP</button>
 		<slot />
 		<Footer />
-		<!-- Scripts -->
-		 <script src="../scripts/main.js"></script>
 	</body>
 </html>
 
@@ -51,7 +53,7 @@ import favicon from '../../public/rainbow-favicon.png'
 	}
 </style>
 
-<!-- <script>
+<script is:inline>
 	const scrollTOP = document.querySelector('.top')
 	window.addEventListener('scroll', () => {    
     if (!scrollTOP) return;
@@ -69,4 +71,4 @@ import favicon from '../../public/rainbow-favicon.png'
 			behavior: 'smooth'
 		})
 	})
-</script> -->
+</script>
