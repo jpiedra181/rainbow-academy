@@ -36,28 +36,28 @@ import favicon from '../../public/rainbow-favicon.png'
 		<slot />
 		<Footer />
 		<script>
-			// Mostrar el botón "TOP" al hacer scroll
-			const scrollTOP = document.querySelector(".top");
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollTOP = document.querySelector(".top");
 
-			window.addEventListener("scroll", () => {
-			if (!scrollTOP) return;
-			if (window.scrollY > 50) {
-				scrollTOP.classList.add("block");
-				scrollTOP.classList.remove("hidden");
-			} else {
-				scrollTOP.classList.remove("block");
-				scrollTOP.classList.add("hidden");
-			}
-			});
+      window.addEventListener("scroll", () => {
+        if (!scrollTOP) return;
+        if (window.scrollY > 50) {
+          scrollTOP.classList.add("block");
+          scrollTOP.classList.remove("hidden");
+        } else {
+          scrollTOP.classList.remove("block");
+          scrollTOP.classList.add("hidden");
+        }
+      });
 
-			// Cuando haces click en el botón "TOP", sube arriba
-			scrollTOP?.addEventListener("click", () => {
-			window.scrollTo({
-				top: 0,
-				behavior: "smooth",
-			});
-			})
-		</script>
+      scrollTOP?.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
 	</body>
 </html>
 
