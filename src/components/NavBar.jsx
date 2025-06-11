@@ -78,9 +78,15 @@ export default function NavBar() {
             {/* Popup menú mobile */}
             {isMenuOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-90 z-20 flex flex-col justify-center items-center text-white text-3xl gap-8"
+                    className="fixed inset-0 bg-white bg-opacity-90 z-20 flex flex-col justify-center items-center text-black text-3xl gap-8"
                     style={{ backdropFilter: "blur(4px)" }}
                 >
+                    <button
+                        onClick={() => setIsMenuOpen(false)}
+                        className="absolute top-4 right-4 text-4xl text-black cursor-pointer"
+                    >
+                        X
+                    </button>
                     <a href="#sobrenosotros" onClick={handleLinkClick}>
                         Conócenos
                     </a>
@@ -96,12 +102,6 @@ export default function NavBar() {
                     <a href="#contacto" onClick={handleLinkClick}>
                         Contacto
                     </a>
-                    <button
-                        onClick={() => setIsMenuOpen(false)}
-                        className="mt-8 text-sm text-gray-300 underline"
-                    >
-                        Cerrar menú
-                    </button>
                 </div>
             )}
         </>
