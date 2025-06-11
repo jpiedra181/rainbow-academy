@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import menu from "../assets/menu-icon.svg"
+import closeBtn from "../assets/close-btn.svg"
 
 export default function NavBar() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -83,9 +84,9 @@ export default function NavBar() {
                 >
                     <button
                         onClick={() => setIsMenuOpen(false)}
-                        className="absolute top-4 right-4 text-4xl text-black cursor-pointer"
+                        className="absolute top-6 right-8 text-4xl text-black cursor-pointer"
                     >
-                        X
+                        <img src={closeBtn} alt="" />
                     </button>
                     <a href="#sobrenosotros" onClick={handleLinkClick}>
                         Conócenos
